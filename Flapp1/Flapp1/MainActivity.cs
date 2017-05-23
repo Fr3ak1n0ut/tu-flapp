@@ -6,7 +6,7 @@ using Android.OS;
 
 namespace Flapp1
 {
-    [Activity(Label = "Flapp1", MainLauncher = true, Icon = "@drawable/icon")]
+    [Activity(Label = "@string/ApplicationName", MainLauncher = true, Icon = "@drawable/icon")]
     public class MainActivity : Activity
     {
         private TextView timeText;

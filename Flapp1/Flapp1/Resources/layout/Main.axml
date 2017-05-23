@@ -29,14 +29,14 @@
                 android:textAppearance="?android:attr/textAppearanceSmall"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:id="@+id/textView1"
+                android:id="@+id/origin_text"
                 android:layout_weight="0.5" />
             <TextView
                 android:text="Destination"
                 android:textAppearance="?android:attr/textAppearanceSmall"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:id="@+id/textView2"
+                android:id="@+id/destination_text"
                 android:layout_weight="0.5" />
         </LinearLayout>
         <LinearLayout
@@ -81,4 +81,15 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/time_button" />
+    <TextView
+        android:text="Submit Information"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/submit_text" />
+    <Button
+        android:text="Submit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/submit_button" />
 </LinearLayout>
