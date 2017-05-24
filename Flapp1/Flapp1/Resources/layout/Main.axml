@@ -49,12 +49,12 @@
             <EditText
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:id="@+id/editText1"
+                android:id="@+id/origin_edit"
                 android:layout_weight="0.5" />
             <EditText
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:id="@+id/editText2"
+                android:id="@+id/destination_edit"
                 android:layout_weight="0.5" />
         </LinearLayout>
     </LinearLayout>

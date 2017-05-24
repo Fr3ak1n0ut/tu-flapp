@@ -9,6 +9,8 @@ namespace Flapp1
     [Activity(Label = "@string/ApplicationName", MainLauncher = true, Icon = "@drawable/icon")]
     public class MainActivity : Activity
     {
+        private EditText origin_edit;
+        private EditText destination_edit;
         private TextView timeText;
         private TextView locationText;
         private TextView dateText;
@@ -31,10 +33,18 @@ namespace Flapp1
             locationText = FindViewById<TextView>(Resource.Id.location_text);
             timeText = FindViewById<TextView>(Resource.Id.time_text);
             dateText = FindViewById<TextView>(Resource.Id.date_text);
+
             dateButton = FindViewById<Button>(Resource.Id.date_button);
             timeButton = FindViewById<Button>(Resource.Id.time_button);
             submitButton = FindViewById<Button>(Resource.Id.submit_button);
 
+            origin_edit = FindViewById<EditText>(Resource.Id.origin_edit);
+            destination_edit = FindViewById<EditText>(Resource.Id.destination_edit);
+
+
+            DateTime timeNow = DateTime.Now;
+            dateText.Text = timeNow.DayOfWeek + ", " + timeNow.ToString("MMMM") + " " + timeNow.Day + ", " + timeNow.Year;
+            timeText.Text = timeNow.ToString("HH:mm");
             dateButton.Click += DateSelect_OnClick;
             timeButton.Click += (o, e) => ShowDialog(TIME_DIALOG_ID);
             submitButton.Click += Submit_OnClick;
@@ -58,7 +68,11 @@ namespace Flapp1
             void Submit_OnClick(object sender, EventArgs eventArgs)
             {
                 var intent = new Intent(this, typeof(FlightInfoActivity));
-                string[] flightInfo = { "flight", "info" };
+                string[] flightInfo = new string[4];
+                flightInfo[0] = origin_edit.Text;
+                flightInfo[1] = destination_edit.Text;
+                flightInfo[2] = timeText.Text;
+                flightInfo[3] = dateText.Text;
                 intent.PutStringArrayListExtra("flight_info", flightInfo);
                 StartActivity(intent);
             }

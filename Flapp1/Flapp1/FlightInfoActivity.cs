@@ -23,7 +23,7 @@ namespace Flapp1
             SetContentView(Resource.Layout.FlightInfo);
             var flightInfo = Intent.Extras.GetStringArrayList("flight_info") ?? new string[0];
             infoText = FindViewById<TextView>(Resource.Id.info_text);
-            infoText.Text = flightInfo[0]+" "+flightInfo[1];
+            infoText.Text = flightInfo[0]+" "+flightInfo[1]+" "+flightInfo[2]+ " " + flightInfo[3];
             // Create your application here
         }
     }
