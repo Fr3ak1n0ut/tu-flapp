@@ -69,8 +69,8 @@ namespace Flapp1
 			// aapt resource value: 0x7f050007
 			public const int destination_edit = 2131034119;
 			
-			// aapt resource value: 0x7f050005
-			public const int destination_text = 2131034117;
+			// aapt resource value: 0x7f050006
+			public const int destination_text = 2131034118;
 			
 			// aapt resource value: 0x7f050000
 			public const int info_text = 2131034112;
@@ -84,8 +84,8 @@ namespace Flapp1
 			// aapt resource value: 0x7f050002
 			public const int location_text = 2131034114;
 			
-			// aapt resource value: 0x7f050006
-			public const int origin_edit = 2131034118;
+			// aapt resource value: 0x7f050005
+			public const int origin_edit = 2131034117;
 			
 			// aapt resource value: 0x7f050004
 			public const int origin_text = 2131034116;
@@ -119,7 +119,10 @@ namespace Flapp1
 			public const int FlightInfo = 2130903040;
 			
 			// aapt resource value: 0x7f030001
-			public const int Main = 2130903041;
+			public const int list = 2130903041;
+			
+			// aapt resource value: 0x7f030002
+			public const int Main = 2130903042;
 			
 			static Layout()
 			{

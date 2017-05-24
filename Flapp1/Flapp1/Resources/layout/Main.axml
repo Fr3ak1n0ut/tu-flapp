@@ -30,14 +30,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:id="@+id/origin_text"
-                android:layout_weight="0.5" />
-            <TextView
-                android:text="Destination"
-                android:textAppearance="?android:attr/textAppearanceSmall"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:id="@+id/destination_text"
-                android:layout_weight="0.5" />
+                android:layout_weight="1" />
         </LinearLayout>
         <LinearLayout
             android:orientation="horizontal"
@@ -46,18 +39,23 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:id="@+id/linearLayout3">
-            <EditText
+            <AutoCompleteTextView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:id="@+id/origin_edit"
                 android:layout_weight="0.5" />
-            <EditText
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:id="@+id/destination_edit"
-                android:layout_weight="0.5" />
         </LinearLayout>
     </LinearLayout>
+    <TextView
+        android:text="Destination"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:id="@+id/destination_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <AutoCompleteTextView
+        android:id="@+id/destination_edit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
     <TextView
         android:text="Select Date"
         android:textAppearance="?android:attr/textAppearanceLarge"
