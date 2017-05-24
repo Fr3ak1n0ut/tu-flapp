@@ -14,6 +14,7 @@ namespace Flapp1
         private TextView dateText;
         private Button dateButton;
         private Button timeButton;
+        private Button submitButton;
 
         private int hour;
         private int minute;
@@ -32,8 +33,11 @@ namespace Flapp1
             dateText = FindViewById<TextView>(Resource.Id.date_text);
             dateButton = FindViewById<Button>(Resource.Id.date_button);
             timeButton = FindViewById<Button>(Resource.Id.time_button);
+            submitButton = FindViewById<Button>(Resource.Id.submit_button);
+
             dateButton.Click += DateSelect_OnClick;
             timeButton.Click += (o, e) => ShowDialog(TIME_DIALOG_ID);
+            submitButton.Click += Submit_OnClick;
 
             // Get the current time
             hour = DateTime.Now.Hour;
@@ -51,8 +55,16 @@ namespace Flapp1
                 frag.Show(FragmentManager, DatePickerFragment.TAG);
             }
 
+            void Submit_OnClick(object sender, EventArgs eventArgs)
+            {
+                var intent = new Intent(this, typeof(FlightInfoActivity));
+                string[] flightInfo = { "flight", "info" };
+                intent.PutStringArrayListExtra("flight_info", flightInfo);
+                StartActivity(intent);
+            }
+
             // Updates the time we display in the TextView
-            
+
         }
         private void UpdateDisplay()
         {
