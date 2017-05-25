@@ -75,7 +75,7 @@ namespace Flapp1
             SetContentView(Resource.Layout.Main);
 
 
-            locationText = FindViewById<TextView>(Resource.Id.location_text);
+            //locationText = FindViewById<TextView>(Resource.Id.location_text);
             timeText = FindViewById<TextView>(Resource.Id.time_text);
             dateText = FindViewById<TextView>(Resource.Id.date_text);
 

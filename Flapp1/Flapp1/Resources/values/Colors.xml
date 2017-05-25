@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <color name="theme_devicedefault_background">#ff263238</color>
+  <item name="card_background" type="color">#ff37474f</item>
+  <item name="button_background" type="color">#ff455a64</item>
+  <item name="row_a" type="color">#ff37474f</item>
+
+</resources>
