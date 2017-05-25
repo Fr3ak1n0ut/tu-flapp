@@ -6,7 +6,7 @@ using Android.OS;
 
 namespace Flapp1
 {
-    [Activity(Label = "@string/ApplicationName", MainLauncher = true, Icon = "@drawable/icon")]
+    [Activity(Label = "@string/FlightSearch", MainLauncher = true, Icon = "@drawable/icon")]
     public class MainActivity : Activity
     {
         private AutoCompleteTextView origin_edit;

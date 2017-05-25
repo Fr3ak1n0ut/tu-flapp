@@ -12,7 +12,7 @@ using Android.Widget;
 
 namespace Flapp1
 {
-    [Activity(Label = "FlightInfoActivity")]
+    [Activity(Label = "@string/FlightInfo")]
     public class FlightInfoActivity : Activity
     {
         private TextView infoText;

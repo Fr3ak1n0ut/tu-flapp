@@ -232,6 +232,12 @@ namespace Flapp1
 			// aapt resource value: 0x7f070001
 			public const int ApplicationName = 2131165185;
 			
+			// aapt resource value: 0x7f070003
+			public const int FlightInfo = 2131165187;
+			
+			// aapt resource value: 0x7f070002
+			public const int FlightSearch = 2131165186;
+			
 			// aapt resource value: 0x7f070000
 			public const int Hello = 2131165184;
 			
