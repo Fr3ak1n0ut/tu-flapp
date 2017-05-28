@@ -115,7 +115,7 @@ namespace Flapp1
 
             void Submit_OnClick(object sender, EventArgs eventArgs)
             {
-                var intent = new Intent(this, typeof(FlightInfoActivity));
+                var intent = new Intent(this, typeof(FlightListActivity));
                 string[] flightInfo = new string[4];
                 flightInfo[0] = origin_edit.Text;
                 flightInfo[1] = destination_edit.Text;
