@@ -1,0 +1,17 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Flapp1", "Flapp1.csproj", "{450200C4-E64B-41B5-BA94-552B9ABF7B49}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{450200C4-E64B-41B5-BA94-552B9ABF7B49}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{450200C4-E64B-41B5-BA94-552B9ABF7B49}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{450200C4-E64B-41B5-BA94-552B9ABF7B49}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{450200C4-E64B-41B5-BA94-552B9ABF7B49}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
